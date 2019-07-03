@@ -58,7 +58,7 @@ class List extends Component<{}>{
         return (
             <View style={{flex:1}}> 
                 <View>
-                    <Text style={StyleSheet.text}>My List</Text>
+                    <Text style={style.text}>My List</Text>
                     <FlatList
                         horizontal
                         ItemSeparatorComponent={() => <View style={{width:5}} />}
@@ -67,7 +67,7 @@ class List extends Component<{}>{
                     />
                 </View>
                 <View>
-                    <Text style={StyleSheet.text}>Top pick for you</Text>
+                    <Text style={style.text}>Top pick for you</Text>
                     <FlatList
                         horizontal
                         ItemSeparatorComponent={() => <View style={{width:5}} />}

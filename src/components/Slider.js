@@ -10,12 +10,6 @@ import {
 import Swiper from 'react-native-swiper';
 
 const {width} = Dimensions.get('window');
-const Slider = props => (
-    <View style={StyleSheet.container}>
-        <Image style={StyleSheet.image} source={props.uri} />
-    </View>
-)
-
 const style = {
     container: {
         flex:1,
@@ -26,6 +20,14 @@ const style = {
         width
     }
 }
+
+const Slider = props => (
+    <View style={style.container}>
+        <Image style={style.image} source={props.uri} />
+    </View>
+)
+
+
 
 export default class Slide extends  Component{
     constructor(props){
@@ -46,9 +48,9 @@ export default class Slide extends  Component{
                     autoplay
                     height={240}
                 >
-                {
-                    this.state.imagesSlider.map((item,i) => <Slider uri={item} key={i} />)
-                }
+                    {
+                        this.state.imagesSlider.map((item,i) => <Slider uri={item} key={i} />)
+                    }
                 </Swiper>
             </View>
         );
