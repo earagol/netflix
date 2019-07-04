@@ -1,0 +1,22 @@
+import React, {Component} from 'react';
+import {
+    Dimensions,
+    StyleSheet,
+    View,
+    Text,
+    Image,
+    ScrollView
+} from 'react-native';
+
+import Icon from 'react-native-vector-icons/FontAwesome';
+const {width,height} = Dimensions.get('window');
+
+export default class Menu extends Component {
+    render(){
+        return(
+            <View>
+                
+            </View>
+        );
+    }
+}
