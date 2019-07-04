@@ -9,7 +9,10 @@ import {
 
 import Swiper from 'react-native-swiper';
 
-const {width} = Dimensions.get('window');
+let ScreenHeight = Dimensions.get("window").height;
+let width = Dimensions.get("window").width;
+
+// const {width} = Dimensions.get('window');
 const style = {
     container: {
         flex:1,
@@ -43,8 +46,9 @@ export default class Slide extends  Component{
 
     render(){
         return(
-            <View>
+            <View style={{height: (ScreenHeight-500)}}>
                 <Swiper
+                    showsButtons={false} 
                     autoplay
                     height={240}
                 >
