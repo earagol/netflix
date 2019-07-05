@@ -43,11 +43,11 @@ const style = StyleSheet.create({
         alignItems:'center',
         justifyContent:'space-between',
         backgroundColor: 'black',
-        marginHorizontal:15
+        paddingHorizontal:15
     },
     logo:{
         height:40,
-        width:120
+        width:160
     }
 });
 
