@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import  Icon from 'react-native-vector-icons/FontAwesome';
+import { Actions } from 'react-native-router-flux';
 
 
 type Props = {};
@@ -24,12 +25,13 @@ class Header extends Component<Props> {
                     />
                 </TouchableWithoutFeedback>
                 <Image style={style.logo} source={require('../Images/logo.png')} />
-                <Icon 
-                    name="search"
-                    color="white"
-                    size={25}
-                />
-    
+                <TouchableWithoutFeedback onPress={ () => { Actions.search() } }>
+                    <Icon 
+                        name="search"
+                        color="white"
+                        size={25}
+                    />
+                </TouchableWithoutFeedback>
             </View>
         )
     }
